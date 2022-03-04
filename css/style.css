@@ -5,8 +5,8 @@ body {
 
 .site-wrap {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 250px 335px 123px 200px 200px 250px 400px 200px;
+    grid-template-columns: 1fr 200px 200px 1fr;
+    grid-template-rows: 175px 335px 123px 200px 200px 250px 400px 200px;
     grid-gap: 10px;
     grid-template-areas:
         "nav nav nav nav"
@@ -35,11 +35,10 @@ body {
 
 .nav {
     grid-area: nav;
-    background-color: #2E0219;
-    border: 2px solid orange;
-    color: orange;
+    background-color: #945D5E;
+    color: #37123C;
     text-align: center;
-    font-size: 25px;
+    font-size: 45px;
 }
 
 .nav h1 {
@@ -47,11 +46,13 @@ body {
 }
 
 .nav a {
-    font-size: 40px;
-    color: orange;
+    font-size: 30px;
+    color: #37123C;
     display: flex;
-    align-items: center;
+    justify-content: space-around;
     text-decoration: none;
+    background-color: #DDA77B;
+    padding: 2px;
 }
 
 .nav a:hover {
