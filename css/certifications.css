@@ -1,0 +1,55 @@
+body {
+    background-color: #13010B;
+    font-family: 'Red Hot Mono', sans-serif;
+    margin: 0%;
+}
+
+.site-wrap {
+    display: grid;
+    grid-template-columns: 1fr 550px 600px 1fr;
+    grid-template-rows: 241px 100px 210px 500px 500px 241px;
+    grid-gap: 5px;
+    grid-template-areas:
+        "nav nav nav nav"
+        ". ps ps ."
+        ". ill ill ."
+        ". html-css html-css ."
+        ". . . ."
+        "footer footer footer footer"
+    ;
+}
+
+/* Certifications Styles */
+
+.photoshop {
+    background-color: #A99F96;
+    color: #2E0219;
+    grid-area: ps;
+}
+
+.photoshop img {
+    width: 40%;
+    height: 40%;
+}
+
+.illustrator {
+    background-color: #A99F96;
+    color: #2E0219;
+    grid-area: ill;
+}
+
+.illustrator img {
+    width: 40%;
+    height: 40%;
+}
+
+.html-css {
+    background-color: #A99F96;
+    color: #2E0219;
+    grid-area: html-css;
+}
+ 
+.html-css img {
+    width: 40%;
+    height: 40%;
+}
