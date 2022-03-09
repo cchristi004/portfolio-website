@@ -1,3 +1,73 @@
-.active {
-    color: #6A0F49;
+.links > .active {
+    background-color: #2E0219;
+    border: 2px solid #6A0F49;
+    color: #DDA77B;
+    box-shadow: 7px 7px 10px black;
+    transition: 0.7s;
+}
+
+.btn > a {
+    color: #A99F96;
+    padding: 4px;
+    text-decoration: none;
+    background-color: #6A0F49;
+    border: 2px solid #2E0219;
+}
+
+.btn > a:hover {
+    color: #DDA77B;
+    background-color: #2E0219;
+    box-shadow: 5px 5px 10px black;
+    transition: 0.7s;
+}
+
+/* Nav Styles */
+
+.nav {
+    grid-area: nav;
+    background-color: #945D5E;
+    color: #37123C;
+    text-align: center;
+    font-size: 31.5px;
+    margin: none;
+}
+
+.nav a {
+    font-size: 33px;
+    color: #71677C;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    background-color: #DDA77B;
+    padding: 4px;
+    border: 2px solid #71677C;
+}
+
+.nav > .logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    height: 70%;
+}
+
+.nav a:hover {
+    background-color: #2E0219;
+    color: #DDA77B;
+    border: 2px solid #6A0F49;
+    box-shadow: 7px 7px 10px black;
+    transition: 0.7s;
+}
+
+.nav > .links {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Footer Styles */
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: #945D5E;
+    color: #37123C;
 }

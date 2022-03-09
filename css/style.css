@@ -1,52 +1,22 @@
 body {
     background-color: #13010B;
-    font-family: lobster;
+    font-family: 'Red Hot Mono', sans-serif;
     margin: 0%;
 }
 
 .site-wrap {
     display: grid;
-    grid-template-columns: 1fr 600px 400px 1fr;
-    grid-template-rows: 222px 100px 270px 100px 180px;
-    grid-gap: 10px;
+    grid-template-columns: 1fr 550px 600px 1fr;
+    grid-template-rows: 241px 100px 210px 500px 500px 241px;
+    grid-gap: 5px;
     grid-template-areas:
         "nav nav nav nav"
-        ". . . ."
         ". profile-pic about ."
-        ". . . ."
+        ". profile-pic about ."
+        ". before after ."
+        ". before after ."
         "footer footer footer footer"
     ;
-}
-
-/* Nav Styles */
-
-.nav {
-    grid-area: nav;
-    background-color: #945D5E;
-    color: #37123C;
-    text-align: center;
-    font-size: 31.5px;
-    margin: none;
-}
-
-.nav a {
-    font-size: 33px;
-    color: #71677C;
-    display: flex;
-    justify-content: space-between;
-    text-decoration: none;
-    background-color: #DDA77B;
-    padding: 4px;
-    border: 2px solid #71677C;
-}
-
-.nav a:hover {
-    color: #6A0F49;
-}
-
-.nav > .links {
-    display: flex;
-    justify-content: space-around;
 }
 
 /* Profile Pic Styles */
@@ -56,24 +26,23 @@ body {
 }
 
 .profile-pic img {
-    width: 120%;
-    height: 120%;
+    width: 99%;
+    height: 99%;
+    border: 2px solid #6A0F49;
 }
 
-/* Form Styles */
+/* Drawings Styles */
 
-.form h1 {
-    text-align: center;
-    font-size: 41px;
-    color: white;
+.before {
+    grid-area: before;
+    background-color: #A99F96;
+    border: 2px solid #6A0F49;
 }
 
-.form {
-    grid-area: form;
-    text-align: center;
-    background-color: #2E0219;
-    border: 2px solid orange;
-    height: 457px;
+.after {
+    grid-area: after;
+    background-color: #A99F96;
+    border: 2px solid #6A0F49;
 }
 
 /* About Styles */
@@ -81,21 +50,14 @@ body {
 .about {
     background-color: #A99F96;
     grid-area: about;
-    color: #71677C;
+    color: #2E0219;
     text-align: center;
     padding: 4px;
     font-size: 22px;
+    border: 2px solid #6A0F49;
 }
 
 .about h2 {
     font-size: 30px;
-}
-
-/* Footer Styles */
-
-.footer {
-    grid-area: footer;
-    background-color: #945D5E;
-    color: #37123C;
-    color: 
+    color: #6A0F49;
 }

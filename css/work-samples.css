@@ -1,0 +1,50 @@
+body {
+    background-color: #13010B;
+    font-family: 'Red Hot Mono', sans-serif;
+    margin: 0%;
+}
+
+.site-wrap {
+    display: grid;
+    grid-template-columns: 1fr 550px 550px 1fr;
+    grid-template-rows: 241px 400px 400px 241px;
+    grid-gap: 5px;
+    grid-template-areas:
+        "nav nav nav nav"
+        ". drawings drawings ."
+        ". drawings drawings ."
+        "footer footer footer footer"
+    ;
+}
+
+/* Drawings Styles */
+
+.drawings {
+    grid-area: drawings;
+    text-align: center;
+    background-color: #71677C;
+}
+
+.drawings > h1 {
+    font-size: 50px;
+}
+
+.drawings > .imgs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.drawings > .imgs img {
+    width: 20%;
+    height: 20%;
+}
+
+.drawings > .imgs2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.drawings > .imgs2 img {
+    width: 20%;
+    height: 20%;
+}
